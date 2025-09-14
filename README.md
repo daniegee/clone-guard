@@ -40,7 +40,8 @@ To interact with the MFRC522 NFC Module, the MFRC522 python library is required.
 
 2. Launch the software and select the device you have access to, the recommended OS and the external location to write the image to.
 
-> [!WARNING] This will override everything on the card
+> [!WARNING]
+> This will override everything on the card
 
 3. Once Write is complete, remove the SD Card and insert into the Raspberry Pi. Connect power and monitor cables. Allow OS to boot.
 
@@ -111,7 +112,7 @@ See additional [commands and flags](https://www.raspberrypi.com/documentation/co
 
 ### Re-Running Existing Project
 
-_Conditions: project repo has been initialised and run at least once*
+*Conditions: project repo has been initialised and run at least once*
 
 1. Open terminal and change into the repo's root directory `cd clone-guard-part-b`
 2. Start the virtual environment by running `source env/bin/activate`.
