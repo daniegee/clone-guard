@@ -40,7 +40,7 @@ To interact with the MFRC522 NFC Module, the MFRC522 python library is required.
 
 2. Launch the software and select the device you have access to, the recommended OS and the external location to write the image to.
 
-    > [!WARNING] This will override everything on the card
+> [!WARNING] This will override everything on the card
 
 3. Once Write is complete, remove the SD Card and insert into the Raspberry Pi. Connect power and monitor cables. Allow OS to boot.
 
