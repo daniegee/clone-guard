@@ -1,0 +1,34 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Clone Guard
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Daniella
+    family-names: Gullotta
+    email: danie9037@gmail.com
+    affiliation: University of Canberra
+  - given-names: David
+    family-names: Prego
+    email: davidprego77@gmail.com
+    affiliation: University of Canberra
+repository-code: 'https://github.com/daniegee/clone-guard'
+abstract: >-
+  Near-field communication (NFC) is widely used in access
+  control systems such as payment processing and regulating
+  access to facilities. Due to its decentralised nature, NFC
+  is limited by resource constraints, making it vulnerable
+  to exploits like key cloning. This study investigated the
+  effectiveness of machine learning algorithms in visually
+  distinguishing cards as an added security measure against
+  unauthorised cloned cards.
+keywords:
+  - Near-Field Communication (NFC)
+  - Access Control Systems
+  - Machine Learning Classification
+  - Deep Learning (CNN)
+  - Key Cloning Prevention

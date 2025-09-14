@@ -1,0 +1,20 @@
+# Python Cache
+__pycache__/
+
+# Virtual Environments
+venv/
+env/
+
+# Images - not included for privacy reasons
+**/BackColour/*
+**/BackDL/*
+**/BackOther/*
+**/BackUC/*
+**/Blank/*
+**/FrontColour/*
+**/FrontDL/*
+**/FrontOther/*
+**/FrontUC/*
+
+## Environment Variables
+.env
