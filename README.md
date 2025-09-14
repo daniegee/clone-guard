@@ -1,16 +1,21 @@
-# <span style="color:#1E90FF">**Clone Guard: Smart Armour Against NFC Cloning**</span>
 
-## <span style="color:#FF8C00">Introduction<span>
+<div align="center">
+
+![repo header](./diagrams/repo_header.png)
+
+## Introduction
 
 This project seeks to accurately classify NFC-Cards based on their visual features to complement and fortify NFC-based access control systems. The solution involves utilised supervised machine learning classifiation techniques and algorithms along with an embedded alert system . The significance of this approach lies in its automated capability to restrict access to potentially cloned cards without requiring users to provide secondary identification (e.g.  biometrics) whilst also providing cloning event alerts. The project’s scope operates under the assumption that stakeholder access systems have distinguishable cards or tags that are used by all users or employees.
 
-## <span style="color:#FF8C00">Development Environment<span>
+</div>
+
+## Development Environment
 
 To successfully run this project the following tools and libraries are required:
 
 ### Software
 
-- [Python IDE]() *(version: 3.11.1)*
+- [Python](https://www.python.org/downloads/release/python-3111/) *(version: 3.11.1)*
 - [git](https://github.com/git-guides/install-git) *(version: 2.39.0)*
 
 ### Hardware
@@ -27,7 +32,7 @@ To successfully run this project the following tools and libraries are required:
 
 To interact with the MFRC522 NFC Module, the MFRC522 python library is required. For compatibility with Raspberry Pi 5, [this](https://github.com/danjperron/MFRC522-python) forked repo has been linked as a git sub module.
 
-## <span style="color:#FF8C00">Getting Started<span>
+## Getting Started
 
 ### Fresh Raspberry Pi Setup
 
@@ -35,16 +40,15 @@ To interact with the MFRC522 NFC Module, the MFRC522 python library is required.
 
 2. Launch the software and select the device you have access to, the recommended OS and the external location to write the image to.
 
-    *(Note: This will override everything on the card)*
+    > [!WARNING] This will override everything on the card
 
 3. Once Write is complete, remove the SD Card and insert into the Raspberry Pi. Connect power and monitor cables. Allow OS to boot.
 
-### Setting Up Remote Access
+### Setting Up Remote Access (optional)
 
 1. Connect Raspberry Pi to a network
 
-2. Click on this icon in the top right of the navbar
-![image.png](/.attachments/image-5d7e6f6e-fe0c-4b2b-b13f-2e6046c601c4.png)
+2. Click on the icon in the top right of the navbar
 
 3. Sign in & follow the prompts to set up the device
 
@@ -95,16 +99,15 @@ See additional [commands and flags](https://www.raspberrypi.com/documentation/co
 ### Cloning & Running Project For the First Time
 
 1. Install required python packages by running `sudo apt install python3-dev python3-pip python3-venv`
-2. Clone the repository by entering `git clone https://engineering-project-6@dev.azure.com/engineering-project-6/Clone%20Guard/_git/clone-guard-part-b`.
-3. The terminal will need to verify credentials for the Azure Project. Open [project](https://dev.azure.com/engineering-project-6/Clone%20Guard/_git/clone-guard-part-b), click clone button and select Generate Git Credentials. Copy password and paste into theterminal.
-4. Change directory `cd clone-guard-part-b`.
-5. Create a Virtual Python Environment by running `python3 -m venv env`.
-6. Start the virtual environment by running `source env/bin/activate`.
-7. Give the setup script executable permissions `chmod +x setup.sh`
-8. Initialise the git submodule & install required packages by running the custom script `./setup.sh`.
-9. Create and populate an `.env` file based off the variables defined in `.env.template`
-10. Run the main script `python main.py`
-11. Place the card near the reader, and it should display the card UID in the terminal. Otherwise, consult troubleshooting docs
+2. Clone the repository by entering `git clone https://github.com/daniegee/clone-guard.git`.
+3. Change directory `cd clone-guard`.
+4. Create a Virtual Python Environment by running `python3 -m venv env`.
+5. Start the virtual environment by running `source env/bin/activate`.
+6. Give the setup script executable permissions `chmod +x setup.sh`
+7. Initialise the git submodule & install required packages by running the custom script `./setup.sh`.
+8. Create and populate an `.env` file based off the variables defined in `.env.template`
+9.  Run the main script `python main.py`
+10. Place the card near the reader, and it should display the card UID in the terminal.
 
 ### Re-Running Existing Project
 
@@ -117,7 +120,11 @@ _Conditions: project repo has been initialised and run at least once*
 5. Run the main script `python main.py`
 6. Place the card near the reader, and it should display the card UID in the terminal.
 
-## <span style="color:#FF8C00">Repo Structure<span>
+## System Diagram
+
+![System Diagram](./diagrams/system_diagram.jpg)
+
+## Repo Structure
 
 ```bash
 ├── 3D models # 3D model blueprint used in the project
@@ -164,7 +171,7 @@ _Conditions: project repo has been initialised and run at least once*
 └── setup.sh # Script to install dependencies
 ```
 
-## <span style="color:#FF8C00">Contributors<span>
+## Contributors
 
 David Prego
 
