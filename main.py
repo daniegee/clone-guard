@@ -105,9 +105,9 @@ def main():
               start = time.time()
               # Capture and save image
               capture_and_save_image(cam)
-              
-              if os.path.exists(f"/home/group6/clone-guard-part-b/{captured_image}"):
-                
+
+              if os.path.exists(f"{PATH_TO_CAPTURED_IMAGE}/{captured_image}"):
+
                 # Predict the class of the captured image
                 predicted_class, confidence = classifier.predict(captured_image)
                 print(f"Predicted class: {class_names[predicted_class]}")
